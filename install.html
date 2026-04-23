@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0b0f17" />
+<title>Install — Baccarat Interceptor</title>
+<link rel="icon" href="./icon-192.png" />
+<style>
+:root{
+  --bg:#0b0f17; --panel:rgba(255,255,255,.06); --panel-hi:rgba(255,255,255,.10);
+  --border:rgba(255,255,255,.14); --text:#f3f5fa; --dim:#8a93a6;
+  --accent:#bf5af2; --green:#30d158; --orange:#ff9f0a; --blue:#0a84ff;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:
+  radial-gradient(1200px 600px at 80% -10%, rgba(191,90,242,.18), transparent 60%),
+  radial-gradient(900px 500px at -10% 110%, rgba(10,132,255,.18), transparent 60%),
+  var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI Variable Display","SF Pro Display","Segoe UI",system-ui,sans-serif;
+  min-height:100vh;
+}
+.wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+header{text-align:center;margin-bottom:40px}
+.logo{font-size:48px;line-height:1;margin-bottom:10px;
+  background:linear-gradient(135deg,#ff9f0a,#bf5af2 60%,#0a84ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-weight:800;letter-spacing:-1px}
+h1{font-size:34px;margin:0 0 8px;letter-spacing:-.5px;font-weight:700}
+.sub{color:var(--dim);font-size:15px;margin:0}
+.grid{display:grid;gap:18px;margin-top:10px}
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:24px 22px;
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  transition:background .2s,transform .2s,border-color .2s;
+}
+.card:hover{background:var(--panel-hi);transform:translateY(-2px);border-color:rgba(255,255,255,.22)}
+.card h2{margin:0 0 4px;font-size:20px;letter-spacing:-.3px;display:flex;align-items:center;gap:10px}
+.card p{margin:0 0 16px;color:var(--dim);font-size:14px;line-height:1.5}
+.badge{display:inline-block;background:rgba(255,255,255,.08);border:1px solid var(--border);
+  color:var(--dim);font-size:11px;letter-spacing:.5px;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;margin-left:6px;font-weight:600}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--text);color:#0b0f17;
+  padding:11px 20px;border-radius:12px;
+  font-weight:600;font-size:14px;text-decoration:none;
+  transition:transform .12s,opacity .2s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn.green{background:var(--green);color:#062b12}
+.btn.orange{background:var(--orange);color:#2b1a00}
+.btn.blue{background:var(--blue);color:#fff}
+.steps{margin:0;padding-left:18px;color:var(--dim);font-size:13px;line-height:1.7}
+.steps li strong{color:var(--text);font-weight:600}
+footer{margin-top:44px;text-align:center;color:var(--dim);font-size:12px}
+footer a{color:var(--dim)}
+.warn{background:rgba(255,159,10,.08);border:1px solid rgba(255,159,10,.25);
+  color:#ffc78a;font-size:12px;padding:10px 12px;border-radius:10px;margin-top:12px;line-height:1.5}
+@media (max-width:520px){
+  .wrap{padding:36px 16px 60px}
+  h1{font-size:28px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">◆</div>
+    <h1>Baccarat Interceptor</h1>
+    <p class="sub">Pick how you want to run it</p>
+  </header>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>🍏 iPhone / iPad <span class="badge">PWA</span></h2>
+      <p>Installs to your home screen, runs full-screen, works offline. No App Store needed.</p>
+      <ol class="steps">
+        <li>Open this page in <strong>Safari</strong> on your iPhone.</li>
+        <li>Tap the <strong>Share</strong> button (square with an arrow).</li>
+        <li>Choose <strong>Add to Home Screen</strong> → <strong>Add</strong>.</li>
+      </ol>
+      <p style="margin-top:14px">
+        <a class="btn" href="./">Open the app →</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🤖 Android <span class="badge">APK · 4 MB</span></h2>
+      <p>Direct APK install. Works on Android 7+ and Chromebooks with the Play Store subsystem.</p>
+      <ol class="steps">
+        <li>Tap the download button below.</li>
+        <li>Open the file — Android will ask to allow installs from your browser.</li>
+        <li>Tap <strong>Install</strong>.</li>
+      </ol>
+      <p style="margin-top:14px">
+        <a class="btn green"
+           href="https://github.com/themdash135/baccarat-interceptor/releases/latest/download/BaccaratInterceptor.apk">
+          Download APK ↓
+        </a>
+      </p>
+      <div class="warn">
+        Debug-signed build — Android may show a <em>Play Protect</em> warning.
+        Tap <strong>More details → Install anyway</strong>.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💻 Desktop / Any browser</h2>
+      <p>No install. Just open the app in a browser tab — Chrome, Edge, Safari, Firefox all work.</p>
+      <p style="margin-top:14px">
+        <a class="btn blue" href="./">Launch in browser →</a>
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    Source on <a href="https://github.com/themdash135/baccarat-interceptor">GitHub</a>.
+    Engine logic mirrors the Python CLI in the main repo.
+  </footer>
+</div>
+</body>
+</html>
